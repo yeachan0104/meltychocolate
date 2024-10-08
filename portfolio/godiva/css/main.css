@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#visual.section_01{padding: 80px 0 0 0;}
+#Events.section_02{background: #f8f4eb;}
+#Events.section_02 .width_con ul.four_con li{}
+#Events.section_02 .width_con ul.four_con li img{}
+
+#Chocolate.section_03{position: relative; background: url(../img/back_01.jpg) 50% no-repeat; background-size: cover;}
+#Chocolate.section_03 .width_con .slider{width: 1200px; left: 50%; transform: translatex(-50%);}
+#Chocolate.section_03 .width_con .slider .text{position: absolute; left: 0; bottom: 0; box-sizing: border-box; padding: 30px;}
+#Chocolate.section_03 .width_con .slider .card .slide{border-radius: 20px;}
+#Chocolate.section_03 .width_con .slider ul.slick-dots{bottom: -40px !important;}
+#Chocolate.section_03 .width_con .slider .slick-list .slick-track > *{background:#e1d8c6; margin: 0 20px; border-radius: 20px;}
+#Chocolate.section_03 .width_con .slider .slick-list .slick-track .slick-slide {transition: all linear .35s; transform: scale(.9);}
+#Chocolate.section_03 .width_con .slider .slick-list .slick-track .slick-center{perspective: 1500px; transform: scale(1.0);}
+
+#Collection.section_04{background: #f8f4eb;}
+#Collection.section_04 .width_con .title_con h4{margin-bottom: 60px;}
+#Collection.section_04 .width_con .tab_content{}
+#Collection.section_04 .width_con .tab_content ul.four_con{}
+#Collection.section_04 .width_con .tab_content ul.four_con li{}
+#Collection.section_04 .width_con .tab_content ul.four_con li .text{position: absolute; width: 100%; box-sizing: border-box; padding: 20px; bottom: 0;}
+#Collection.section_04 .tab_content{position: absolute; opacity: 0; height: 0; pointer-events: none; overflow: hidden;}
+#Collection.section_04 .tab_content .four_con{position: relative; margin-top: 20px;}
+#Collection.section_04 .tab_content .four_con li{ position: relative; border-radius: 20px; background: #fff; overflow: hidden; box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .5); transform: translateY(20px); opacity: 0; transition: transform 0.35s ease-out, opacity 0.35s ease-out;}
+#Collection.section_04 .tab_content .four_con img{position: relative; width: 100%; background: #fff; transform: scale(.5); margin: -50px 0 50px 0;}
+#Collection.section_04 .tab_content.selected{position: relative; opacity: 1; height: auto; pointer-events: auto; overflow: hidden;}
+#Collection.section_04 .tab_content.selected .four_con li{ transform: translateY(0); opacity: 1;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(1){ transition-delay: 0s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(2){ transition-delay: .1s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(3){ transition-delay: .2s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(4){ transition-delay: .3s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(5){ transition-delay: .4s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(6){ transition-delay: .5s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(7){ transition-delay: .6s;}
+#Collection.section_04 .tab_content.selected .four_con li:nth-child(8){ transition-delay: .7s;}
+
+#Holiday.section_05{}
+#Holiday.section_05 > div{position: relative; clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); height: 100vh; background: #000;}
+#Holiday.section_05 .detail {position: relative; z-index: 11; text-align: center; top:50%; transform: translateY(-50%);}
+#Holiday.section_05 .detail h1{}
+#Holiday.section_05 .detail .btns{left: calc(50% - 100px); margin-top: 40px;}
+#Holiday.section_05 .bg {position: fixed; display: block; top: 0; left: 0; width: 100%; height: 100%; opacity: .65;}
+#Holiday.section_05 .Christmas .bg {background: url(../img/holi_01.jpg) center center; background-size: cover;}
+#Holiday.section_05 .Birthday .bg {background: url(../img/holi_02.jpg) center center; background-size: cover;}
+#Holiday.section_05 .Wedding .bg {background: url(../img/holi_03.jpg) center center; background-size: cover;}
+
+#Coffee.section_06{background: #f8f4eb;}
+#Coffee.section_06 .width_con ul.six_con{}
+#Coffee.section_06 .width_con ul.six_con li{box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .5);}
+#Coffee.section_06 .width_con ul.six_con li .text{position:absolute; width: 100%; box-sizing: border-box; padding: 20px; bottom: 0; background: linear-gradient(rgba(225,216,198,.0) 0,rgba(225,216,198,.7) 50%, rgba(225,216,198,1) 100%); border-radius: 16px; padding-top: 40px;}
+#Coffee.section_06 .width_con ul.six_con li .text h5{text-transform: uppercase; font-size: 22px;}
+#Coffee.section_06 .width_con ul.six_con li .text h6{font-size: 14px;}
+
+#Membership.section_07{background: url(../img/mem_01.jpg) 50% no-repeat; background-size: cover;}
+#Membership.section_07 .width_con .title_con h2,
+#Membership.section_07 .width_con .title_con h4{color: #fff;}
+#Membership.section_07 .width_con .title_con h4{margin-bottom: 70px;}
+#Membership.section_07 .width_con .btn_01{position: absolute; left: 50%; margin: -120px -100px 0;}
+
+#Instagram.section_08{background: #f8f4eb; transition: all 50ms ease-in-out;}
+#Instagram.section_08 .width_con .title_con h4{margin: 35px 0 60px 0;}
+#Instagram.section_08 .width_con .instagram_contents{}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con > *{background: #000;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li{position: relative;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .view_more:hover{opacity: .7;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal{position: fixed; display: none; width: 100%; height: 100%;  top: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); z-index: 10;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content{position:fixed; top: 50%; left: 50%; transform:translate(-50%, -50%); z-index:11;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box{position: absolute; width:100%;  background:#fff; top:0; height: 60px; border-radius: 20px 20px 0 0;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box h5{position: absolute; top: 24px; left: 52px; font-family: 'Noto Sans', sans-serif; color: #222; font-size:14px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box img{position: absolute; width: 28px; background: none; top: 14px; left: 14px; box-shadow: none; border: 2px solid transparent; border-radius: 50%; background-image: linear-gradient(#fff, #fff), linear-gradient(225deg, rgba(191,14,180,1) 0%, rgba(243,190,98,1) 85%); background-origin: border-box; background-clip: content-box, border-box;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box2{position: absolute; width:100%;  background: #fff; bottom:0; height: 60px; border-radius: 0 0 20px 20px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box2 a img{width: 24px; border-radius: none; margin: 6px 0 0 10px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box2 a .flag{position: absolute; right: 14px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .box2 span h6{font-size: 14px; left:14px; bottom: -4px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content a .more{position: absolute; width: 24px; right: 15px; top: 18px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .in {width: 600px; height: 600px;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .close{position: absolute; color: #fff; right: -32px; top:-32px; font-size: 44px; cursor: pointer; z-index: 10;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li img{width: 100%; border-radius: 20px; background: #fff; box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .5); }
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_1{ background: url(../img/ins_01.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_2{ background: url(../img/ins_02.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_3{ background: url(../img/ins_03.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_4{ background: url(../img/ins_04.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_5{ background: url(../img/ins_05.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_6{ background: url(../img/ins_06.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_7{ background: url(../img/ins_07.jpg) 50% no-repeat; background-size: cover;}
+#Instagram.section_08 .width_con .instagram_contents ul.four_con li .ratio_1_8{ background: url(../img/ins_08.jpg) 50% no-repeat; background-size: cover;}
+
+#history.section_09{position: relative; background: url(../img/his_bg_01.jpg) 50% no-repeat; background-size: cover;}
+#history.section_09 .width_con .title_con h2,
+#history.section_09 .width_con .title_con h4{color: #fff;}
+#history.section_09 .width_con .title_con h4{margin-bottom: 60px;}
+#history.section_09 .width_con .slider_box{position: relative; width: 660px; left: calc(50% - 330px);}
+#history.section_09 .width_con .slider_box .slider{}
+#history.section_09 .width_con .slider_box .slider .slick-prev{left:20px !important;}
+#history.section_09 .width_con .slider_box .slider .slick-next{right:20px !important;}
+#history.section_09 .width_con .slider_box .slider .card .text{position: absolute; top:50%; width: 400px; color:#fff; padding: 20px;}
+#history.section_09 .width_con .slider_box .slider .card_03 .text {width: 300px; top:48%;}
+#history.section_09 .width_con .slider_box .slider .card .text h2{color:#fff; margin-bottom: 20px;}
+#history.section_09 .width_con .slider_box .slider .card .text p{font-size: 16px;}
+#history.section_09 .width_con .slider_box .slider .slick-list{border-radius: 20px;}
+#history.section_09 .width_con .slider_box .slider .card img{width: 660px;}
+
+#Contact.section_10{position: relative; height: 600px; overflow: hidden; background:#222;}
+#Contact.section_10 iframe#map_con{position: absolute; width: calc(100% + 480px); height: 1000px; margin: -150px 0 0 -450px; border: none;  pointer-events: none;}
+#Contact.section_10 .text_box{position: absolute; content: ''; width: 248px; height: 200px; left: 50%; top: 200px; background-color: #e1d8c6; box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .85); border-radius: 10px; opacity: .95; padding: 40px;}
+#Contact.section_10 .text_box h5{font-size: 24px; font-family: 'Noto Sans KR', sans-serif; margin: 0 0 40px 0;}
+#Contact.section_10 .text_box h6{font-size: 16px; line-height: 1.15em; margin: 0 0 10px 0;}

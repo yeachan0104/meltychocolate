@@ -1,0 +1,158 @@
+@charset "UTF-8";
+::selection { background: #af9f8c; color: #fff;}
+.lock_scroll{ overflow: hidden;}
+/* Text ------------------------------------------ */
+h1,h2,h3,h4,h5,h6{ position: relative; font-weight: normal; line-height:1em; color: #222; }
+h1{ font-size: 160px; font-weight: 900; text-transform: uppercase; margin: 0 0 16px 0; font-family: 'Noto Sans', sans-serif; }
+h2{ font-size: 30px; font-weight: 700; text-transform: uppercase; margin: 16px 0 0 0; font-family: 'Playfair Display SC', sans-serif;}
+h3{ font-size: 18px; font-weight: 500; color: #af9f8c; text-transform: uppercase; font-family: 'Noto Sans', sans-serif; margin: 0 0 10px 0; }
+h4{ font-size: 14px; font-weight: 500; font-family: 'Noto Sans', sans-serif;   margin: 35px 0; }
+h4:before{ position: absolute; top: -19px; left: 0; content: ''; width: 28px; height: 3px; background: #af9f8c;}
+h5{ font-size: 14px; font-weight: 700; font-family: 'Noto Sans', sans-serif; margin: 0 0 16px 0; }/*사진 내부 제목*/
+h6{ font-size: 12px; font-weight: 400; font-family: 'Noto Sans', sans-serif; margin:0; }/*사진 내부 설명*/
+.title_con{}
+
+.title_con h2,
+.title_con h3,
+.title_con h4,
+.title_con h4:before{ transition: all 500ms ease-out;}
+
+.title_con h2{transition-delay: 150ms !important;}
+.title_con h3{}
+.title_con h4{ transition: all 500ms ease-out 300ms;}
+.title_con h4:before{}
+
+.wait_scroll .title_con h2{ margin-top: 26px; }
+.wait_scroll .title_con h3{ margin-top: 10px; }
+.wait_scroll .title_con h4{ line-height: 1.5em; color:rgba(34,34,34,0);}
+.wait_scroll .title_con h4:before{ opacity: 0; top: -9px;}
+
+hr{height: 1px; border: none; background: #fff;}
+/* 홀수 섹션 h2, h4 폰트컬러 흰색지정 */
+.sections:nth-child(2n-1) h4{color: #fff;}
+.sections:nth-child(2n-1) h2{color: #fff;}
+/* 텍스트 가운데정렬 */
+.center > *{text-align: center;}
+.center h4:before{left: 50%; margin: 0 0 0 -14px;}
+/* 텍스트 좌측정렬*/
+.left > *{text-align: left;}
+.right > *{text-align: right;}
+/*----------------------------------------------------*/
+/* 버튼------------------------------------------------*/
+.btns{ position: relative; display: inline-block; *display: inline; *zoom: 1; width: 170px; height: 40px; background: #fff; box-sizing: border-box; border-radius: 8px; box-shadow: 0 10px 30px -15px rgba(0,0,0,.65); text-align: center; text-decoration: none; line-height: 40px; color: #222; font-size: 14px; font-weight: 600; cursor: pointer; vertical-align: top; transition: all 125ms linear;}
+.btns:hover{ box-shadow: 0 8px 24px -12px rgba(0,0,0,.85);}
+.btns:active{ box-shadow: 0 1px 3px -2px rgba(0,0,0,1); transform: scale(.985);}
+/*샌드배경*/
+.btns.btn_a{ background: #af9f8c; color:#fff; text-transform: uppercase; box-shadow: 0 10px 30px -15px rgba(146,133,118,.65);}
+.btns.btn_a:hover{ background: #928576; box-shadow: 0 8px 24px -12px rgba(51,51,51,.85);}
+.btns.btn_a:active{ box-shadow: 0 1px 3px -2px rgba(146,133,118,.85);}
+/*진회색배경*/
+.btns.btn_b{ background: #333333; color:#fff; text-transform: uppercase; /*box-shadow: 0 10px 30px -15px rgba(34,34,34,.65)*/;}
+.btns.btn_b:hover{ background: #222222; box-shadow: 0 8px 24px -12px rgba(34,34,34,.85);}
+.btns.btn_b:active{ box-shadow: 0 1px 3px -2px rgba(34,34,34,1); }
+/*----------------------------------------------------*/
+/* 슬릭 리디자인----------------------------------------*/
+.slick-arrow{ background: #af9f8c !important; z-index: 9; border-radius: 80px; font-weight:500; } 
+.slick-prev{ left:-18px !important;}
+.slick-next{ right:-18px !important;}
+.slick-prev, .slick-next{ width: 40px !important; height: 40px !important;}
+/*화살표*/
+.slick-arrow:before{ font-family: "Font Awesome 5 Pro"; }
+.slick-prev:before{ content:'\f053' !important; margin: 0 0 0 -4px;}
+.slick-next:before{ content:'\f054' !important; margin: 0 -6px 0 0;}
+.slick-prev:before,
+.slick-next:before{ font-size: 22px !important; line-height: .7 !important;/*line-height로 위치 조정*/ opacity: 1 !important; color: #eee !important; }
+.slick-arrow:hover{ background: #928576 !important;}
+.slick-arrow:active{ background: #928576 ; transform: scale(.96) translateY(-50%) !important; transition: all linear .25s; }
+/*도트*/
+ul.slick-dots{ bottom: -10px !important;}/*이미지배치나 마진 상관없이 무조건 36px*/
+ul.slick-dots > li{ width: 16px; height: 16px; margin: 0 8px; box-sizing: border-box; border: 2px solid rgba(175,159,140,.5); border-radius: 50%; transition: all .15s linear; }
+ul.slick-dots > li:hover{ border: 2px solid rgba(175,159,140,1);}
+ul.slick-dots > li:active{ border: 4px solid rgba(175,159,140,1); }
+ul.slick-dots > li.slick-active{border: 2px solid rgba(175,159,140,1); background: rgba(175,159,140,1);}
+ul.slick-dots > li > button{ display:none;}
+/*----------------------------------------------------*/
+/* 로딩-----------------------------------------------*/
+.loading_cover{ position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: #000; z-index: 99999;}
+.loading_cover > *{ position: absolute; width: 300px; height: 300px; top:50%; left: 50%; margin: -150px 0 0 -150px;}
+.loading_cover .progress{ height: 0; background: #fff; transition: all 50ms ease-in-out;}/*progress = 로딩바*/
+.loading_cover img{ box-shadow: 0 0 0 100px rgba #000; }
+/*----------------------------------------------------*/
+/*section common--------------------------------------*/
+.wrap{}
+.sections{ position: relative;}
+.width_con{position: relative; padding: 120px 0; margin: 0 auto; width: 1200px;  }
+.width_con.no_padding{ padding: 0; } /*클래스 사이에 띄워쓰기를 하지 않으면 wid_con과 no_padding 모두 해당일 때 라는 의미를 가짐*/
+/*----------------------------------------------------*/
+/* Header---------------------------------------------*/
+
+#header.section_01{ position: fixed; width: 100%; height: 80px; z-index: 9999; }
+#header.section_01:before{ position: absolute; height:0; width: 100%; content:'';  background: rgba(0,0,0,0); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); -webkit-backdrop-filter: blur(0px); backdrop-filter: blur(0px); filter: blur(10px); transition: all 500ms ease-out;}
+#header.section_01.scroll:before{ height: 100%; background: rgba(0,0,0,.5); box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); filter: blur(2px); }
+
+#header.section_01 .width_con img{ margin: 10px 0; height: 60px; }
+#header.section_01 .width_con ul.nav{position: absolute; top: 31px; right: 0; }
+#header.section_01 .width_con ul.nav li{ display: inline-block; *display: inline; *zoom: 1; margin: 0 0 0 16px; font-size: 14px; font-family: 'Noto Sans', sans-serif;}
+#header.section_01 .width_con ul.nav li a{ display: block; font-weight: 400; color: #eee; text-decoration: none; text-transform: uppercase; transition: all .15s ease-in-out;}
+
+#header.section_01 .width_con ul.nav li.underbar{ position: absolute; bottom: -5px; width: 200px; height: 2px; margin: 0; background: linear-gradient(90deg, rgba(175,159,140,0) 0%, rgba(175,159,140,1) 15%, rgba(175,159,140,1) 85%, rgba(175,159,140,0) 100%); transition: all .35s ease-in-out;}
+
+#header.section_01 .width_con ul.nav{position: absolute; top: 40px; right: 0; }
+#header.section_01 .width_con ul.nav li{ display: inline-block; *display: inline; *zoom: 1; margin: 0 0 0 32px; font-family: 'Noto Sans', sans-serif;}
+#header.section_01 .width_con ul.nav li a{ display: block; font-weight: 600; font-size: 12px; color: #eee; text-decoration: none; text-transform: uppercase; transition: all .15s ease-in-out;}
+
+#header.section_01 .width_con ul.nav li.underbar{ position: absolute; bottom: -5px; width: 200px; height: 2px; margin: 0; background: linear-gradient(90deg, rgba(175,159,140,0) 0%, rgba(175,159,140,1) 15%, rgba(175,159,140,1) 85%, rgba(175,159,140,0) 100%); transition: all .35s ease-in-out;}
+
+#header.section_01 .width_con ul.sub_nav{ position: absolute; top: 13px; right: 0; }
+#header.section_01 .width_con ul.sub_nav li{ display: inline-block; *display: inline; *zoom: 1; margin: 0 0 0 16px; font-size: 11px; font-family: 'Noto Sans', sans-serif;}
+#header.section_01 .width_con ul.sub_nav li a{ display: block; font-weight: 300; color: #eee; text-decoration: none; text-transform: uppercase; transition: all .15s ease-in-out;}
+#header.section_01 .width_con ul.sub_nav li select.lang{ padding: 0 5px; background: none; color: #eee; box-shadow: 0 0 0 1px rgba(255,255,255,.35); border-radius: 40px; cursor: pointer;}
+#header.section_01 .width_con ul.sub_nav li select.lang:hover{ box-shadow: 0 0 0 1px rgba(255,255,255,1); }
+#header.section_01 .width_con ul.sub_nav li select.lang option{ background: rgba(0,0,0,.85); color: inherit;}
+#header.section_01 .width_con ul.nav:hover li a,
+#header.section_01 .width_con ul.sub_nav:hover li a{ color: #ddd; }
+#header.section_01 .width_con ul.nav li a:hover,
+#header.section_01 .width_con ul.sub_nav li a:hover{ color: #af9f8c; }
+#header.section_01 .home .nav li{ display: inline-block; *display: inline; *zoom: 1; }
+/*----------------------------------------------------*/
+/* Footer---------------------------------------------*/
+#footer.section_12{ position: relative; background: #222; } /*footer background 색*/
+
+#footer.section_12 .width_con .nav{ position: absolute; bottom: 197px; right: 0; }
+#footer.section_12 .width_con .nav li{ display: inline-block; *display: inline; *zoom: 1; margin: 0 0 0 16px; font-size: 12px; font-family: 'Noto Sans', sans-serif; }
+#footer.section_12 .width_con .nav li a{ display: block; font-weight: 400; color: #eee; text-decoration: none; text-transform: uppercase; transition: all .15s ease-in-out; }
+#footer.section_12 .width_con hr{ margin: 20px 0; color: #eee; }
+#footer.section_12 .width_con .sub_nav{ position: absolute; bottom: 143px; right: 0; color: #999; font-size: 11px; }
+
+/* 글자 눌리는 효과*/
+#footer.section_12 .width_con .nav:hover li a{ color: #999; transition: all .15s ease-in-out; }
+#footer.section_12 .width_con .nav li a:hover{ cursor: pointer; color: #eee; }
+#footer.section_12 .width_con .nav li a:active{ color: #af9f8c; transition: all .15s ease-in-out; }
+
+/* sns 아이콘*/
+#footer.section_12 .width_con .sns_icon { position: relative; width:180px; left: 0; font-size: 25px; color: #eee; }
+#footer.section_12 .width_con .sns_icon li{ display: inline-block; *display: inline; *zoom: 1; margin: 0 20px 0 0; }
+
+/* 계열사 로고 애니메이션*/
+#footer.section_12 .width_con .img_slide{ position: relative;  height: 200px; margin: 0; overflow: hidden; -webkit-mask-box-image: linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 100px, rgba(0,0,0,1) 1100px, rgba(0,0,0,0) 1200px);}
+#footer.section_12 .width_con .img_slide div.slide { position: absolute; top: -50px; }
+#footer.section_12 .width_con .img_slide div img{ display: inline-block; *display: inline; *zoom: 1; width: 300px; padding: 0; opacity: .5; vertical-align:top; }
+#footer.section_12 .width_con .img_slide div:nth-child(1){ top: 0; left:0; animation: go_left 50000ms linear infinite; }
+#footer.section_12 .width_con .img_slide div:nth-child(2){ top: 100px; right: 0%; animation: go_right 50000ms linear infinite; }
+#footer.section_12 .width_con .img_slide div.slide:hover{ animation-play-state: paused; }
+@keyframes go_left{
+    100% {transform: translateX(-66.6666%);}
+}
+@keyframes go_left_slow{
+    100% {transform: translateX(-36.6666%);}
+}
+
+@keyframes go_right{
+    100% {transform: translateX(66.6666%);}
+}
+/* sns 아이콘 눌리는 효과*/
+#footer.section_12 .width_con .sns_icon:hover i{ color: #999; transition: all .15s ease-in-out;}
+#footer.section_12 .width_con .sns_icon i:hover{ cursor: pointer; color: #eee; }
+#footer.section_12 .width_con .sns_icon i:active{ color: #af9f8c; transition: all .15s ease-in-out;}
+
+/*----------------------------------------------------*/

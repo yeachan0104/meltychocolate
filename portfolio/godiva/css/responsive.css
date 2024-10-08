@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+@media all and (min-width:0px) and (max-width:999px){
+     
+    #header {height: 60px;}
+    #header .width_con .nav {position: fixed; right: -300px; top:0; height:100vh; width: 270px; background: #3b1a0f; border-radius: 10px 0 0 10px;  z-index: 10; transition: right 0.35s ease-in-out;}
+    #header .width_con .nav:after {position:absolute; content:''; top: 50px; left:45px; width: 180px; height:60px; background:  url(../img/logo_header_01.svg) 50% no-repeat; background-size: contain;}  
+    #header .width_con .nav:before {position:absolute; content:''; top: 650px; left:45px; width: 180px; height:180px; background:  url(../img/logo_footer_01.png) 50% no-repeat; background-size: contain;}
+    
+    #header .width_con .nav ul.nav_01{top:150px; left: 50px;}
+    #header .width_con .nav ul.nav_01 li{display: block; margin: 0 0 30px 0; font-size: 17px;}
+    #header .width_con .nav ul.nav_02{position:relative; margin: 500px 0 0 24px;}
+    #header .width_con .nav ul.nav_02 li{display: block; margin: 20px 0 0 0;}
+    
+    body.open_nav{overflow: hidden;}
+    body.open_nav #header .width_con .nav{right:0;}
+    body.open_nav #header .width_con .nav{right:0; overflow-y: scroll; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */}
+    body.open_nav #header .width_con .nav::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
+    
+    .open_nav_cover { position: fixed; top:0; left:0; height:0vh; width:100vw; backdrop-filter: blur(0px); -webkit-backdrop-filter: blur(0px); background: rgba(0,0,0,0); transition: backdrop-filter 0.25s linear, height 0s linear 0.25s, background 0.25s linear; z-index: 8;}
+    body.open_nav .open_nav_cover {height: 100vh; background: rgba(0,0,0,0.35); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); transition: backdrop-filter 0.25s linear, background 0.5s linear;}
+    
+    #header .width_con .btn_open_nav{display: block;}
+    body.open_nav #header .btn_open_nav{ transform: translateX(-240px); z-index: 10;}
+    body.open_nav #header .width_con .btn_open_nav div{background: transparent; transition: all 350ms ease-in-out;}
+    body.open_nav #header .width_con .btn_open_nav div:before,
+    body.open_nav #header .width_con .btn_open_nav div:after{transition: all 250ms ease-in-out 250ms; background: #fff;}
+    body.open_nav #header .width_con .btn_open_nav div:before{top: 0px; transform: rotate(45deg);}
+    body.open_nav #header .width_con .btn_open_nav div:after{bottom: 0px; transform: rotate(-45deg);}
+    
+    #visual.section_01{padding: 60px 0 0 0;}
+    #Chocolate.section_03 .width_con .slider{width: 960px;}
+    #Chocolate.section_03 .width_con .slider .card .slide{width: 288px;}
+    #collection#Collection.section_04 .four_con img{top:-60px;}
+    #Holiday.section_05 .detail{position: relative; z-index: 11; text-align: center; top:50%; transform: translateY(-50%);}
+    #Holiday.section_05 .detail h1{font-size: 60px;}
+    #Holiday.section_05 .detail .btns{left: calc(50% - 100px);}    
+    #Membership.section_07{ background: url(../img/mem_02.jpg) 50% no-repeat; background-size: cover;}
+    #Membership.section_07 .width_con .title_con h4{font-size:16px;}    
+    #history.section_09 .width_con .title_con h4{font-size: 14px;}    
+    #Contact.section_10 .text_box{width: 228px; height: 180px; left: 50%;}
+    #Contact.section_10 .text_box h5{font-size: 22px; margin: 0 0 20px 0; font-family: 'Noto Sans KR', sans-serif;}
+    #Contact.section_10 .text_box h6{font-size: 16px; line-height: 1.15em; margin: 0 0 10 0;}
+    
+}
+
+@media all and (min-width:0px) and (max-width:479px){
+    
+    h1{font-size: 42px !important;}
+    h5{font-size: 10px !important; margin: 0px 0 4px 0;}
+    h6{font-size: 10px !important;}
+    
+    .width_con{width: calc(100% - 40px);} /*마진 좌우 : 20*/
+    .btn_01{ width: 150px;}
+    .six_con{width: calc(100% + 20px); margin: 0 -10px -20px;}
+    .six_con > *{width: calc(50% - 20px); margin: 0 10px 20px;}
+    .four_con{width: calc(100% + 20px); margin: 0 -10px;}
+    .four_con > *{width: calc(50% - 20px); margin: 10px 10px;}
+    
+    .slick-prev, .slick-next, .slick-arrow{ display: none !important;}
+    ul.slick-dots{bottom: 10px !important;}
+    ul.slick-dots > li{width: 10px; height: 10px; margin: 0 5px; box-sizing: border-box; border: 2px solid rgba(50,22,13,1); border-radius: 50%; transition: all .15s linear;}
+    .tabs ul li{padding: 6px 2% 0; font-size: 10px;}
+    
+    #header .width_con a.btn_home {top: 18px; width: 96px; height: 30px;}
+    
+    #visual.section_01 .slider .card img{width: 100%;}  
+    #Events.section_02 .width_con ul.four_con li a.btn_01{top:320px;}
+    #Events.section_02 .width_con ul.four_con li .title_con h4{font-size: 10px;}        
+    #Chocolate.section_03 .width_con .slider{width: 360px;}
+    #Chocolate.section_03 .width_con .slider .card .slide{width: 320px;}    
+    #Chocolate.section_03 .width_con .slider .text h5{font-size: 18px !important;}
+    #Chocolate.section_03 .width_con .slider .text h6{font-size: 14px !important;}
+    #Collection.section_04 .tab_content .four_con img {margin: -40px 0 40px 0;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text {padding: 10px;}
+    #Coffee.section_06 .width_con ul.six_con li .text {padding: 5px; padding-top: 10px;}
+    #Membership.section_07 .width_con .btn_01 {width: 200px;}    
+    #Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .in {width: 340px; height: 340px;}
+    #Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .close{ right: 10px; top:-30px;}
+    #history.section_09 .width_con .slider_box{position: relative; width: 360px; left: calc(50% - 180px);}   
+    #history.section_09 .width_con .slider_box .slider .card img{width: 360px;}
+    #history.section_09 .width_con .slider_box .slider .card .text {width: 300px; top:20%;}
+    #history.section_09 .width_con .slider_box .slider .card_03 .text {width: 160px; top:10%;}
+    #history.section_09 .width_con .slider_box .slider .card .text h2{color:#fff; margin-bottom: 20px; font-size: 24px;}
+    #history.section_09 .width_con .slider_box .slider .card .text p{font-size: 12px;}   
+    #Contact.section_10 .text_box{left: 0;}
+    #Contact.section_10 .text_box h5{font-size: 18px !important;}
+    #Contact.section_10 .text_box > * > h6{font-size: 14px !important;}
+    
+}
+
+@media all and (min-width:480px) and (max-width:599px){
+    
+    .width_con{width: calc(100% - 50px);} /*마진 좌우 : 25*/
+    
+    .six_con{width: calc(100% + 25px); margin: 0 -12.5px -25px;}
+    .six_con > *{width: calc(50% - 25px); margin: 0 12.5px 25px;}
+    .four_con{width: calc(100% + 25px); margin: 0 -12.5px;}
+    .four_con > *{width: calc(50% - 25px); margin: 0 12.5px 25px;}
+    
+    #header .width_con a.btn_home { top: 12px; width: 128px; height: 40px;}
+    h4{font-size: 14px; transition: all 350ms ease-in-out;}
+    .slick-prev, .slick-next, .slick-arrow{ display: none !important;}
+    ul.slick-dots{bottom: 10px !important;}
+    ul.slick-dots > li{width: 10px; height: 10px; margin: 0 5px; box-sizing: border-box; border: 2px solid rgba(50,22,13,1); border-radius: 50%; transition: all .15s linear;}
+    
+    #visual.section_01 .slider .card img{width: 100%;}    
+    #Chocolate.section_03 .width_con ul.four_con li .type{transform: translate(-50%, -75%) scale(.7);}
+    #Chocolate.section_03 .width_con ul.four_con li .type{}
+    #Chocolate.section_03 .width_con ul.four_con li .text h6{font-size:11px;}    
+    #Chocolate.section_03 .width_con .slider{width: 400px;}
+    #Chocolate.section_03 .width_con .slider .card .slide{width: 360px;}
+    #Chocolate.section_03 .width_con .slider .text {padding: 20px;}
+    #Chocolate.section_03 .width_con .slider .text h5{font-size: 24px;}
+    #Chocolate.section_03 .width_con .slider .text h6{font-size: 18px;}    
+    #Collection.section_04 .width_con .tabs ul li{font-size:11px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text{padding: 10px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text h5{font-size:14px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text h6{font-size:12px;}
+    #Coffee.section_06 .width_con ul.six_con li .text h5{font-size: 14px;}
+    #Coffee.section_06 .width_con ul.six_con li .text h6{font-size: 11px;}
+    #Coffee.section_06 .width_con ul.six_con li .text {padding: 40px 10px 10px 10px;}    
+    #Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .in {width: 450px; height: 450px;}
+    #Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .close{ right: -22px; top:-22px; font-size: 32px;}
+    #history.section_09 .width_con .slider_box{position: relative; width: 480px; left: calc(50% - 240px);}   
+    #history.section_09 .width_con .slider_box .slider .card img{width: 480px;}
+    #history.section_09 .width_con .slider_box .slider .card .text {width: 300px; top:40%;}
+    #history.section_09 .width_con .slider_box .slider .card_03 .text {width: 200px; top:40%;}
+    #history.section_09 .width_con .slider_box .slider .card .text h2{color:#fff; margin-bottom: 20px; font-size: 24px;}
+    #history.section_09 .width_con .slider_box .slider .card .text p{font-size: 12px;}    
+    #Contact.section_10 .text_box{width: 200px; height: 180px; left: 38%;}
+    #Contact.section_10 .text_box h5{font-size: 20px;}
+    #Contact.section_10 .text_box h6{font-size: 14px; line-height: 1.15em; margin: 0 0 10 0;}
+    
+}
+
+@media all and (min-width:600px) and (max-width:999px){
+    
+    .width_con{ width: calc(100% - 60px);} /*마진 좌우 : 30*/
+    #header .width_con a.btn_home{ top: 12px; width: 128px; height: 40px;}
+    h4{font-size: 18px; transition: all 350ms ease-in-out;}
+    h5{font-size: 26px;}
+    h6{font-size: 22px;}
+    
+    .six_con{width: calc(100% + 30px); margin: 0 -15px -20px;}
+    .six_con > *{ width: calc(50% - 30px); margin: 0 15px 20px;}
+    .four_con{width: calc(100% + 25px); margin: 0 -12.5px;}
+    .four_con > *{width: calc(50% - 25px); margin: 0 12.5px 25px;}
+    
+    #visual.section_01 .slider .card img{width: 100%;}
+    
+}
+
+@media all and (min-width:600px) and (max-width:900px){
+    
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text h5{font-size:18px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text h6{font-size:16px;} 
+    #Collection.section_04 .width_con .tabs ul li{font-size:14px;}
+    #Coffee.section_06 .width_con ul.six_con li .text h5{font-size: 18px;}
+    #Coffee.section_06 .width_con ul.six_con li .text h6{font-size: 12px;}
+    
+}
+
+@media all and (min-width:600px) and (max-width:750px){
+    
+    h4{font-size: 16px; transition: all 350ms ease-in-out;}
+    h5{font-size: 22px;}
+    h6{font-size: 18px;}
+    
+    #Chocolate.section_03 .width_con .slider{width: 400px;}
+    #Chocolate.section_03 .width_con .slider .card .slide{width: 360px;}    
+    #Instagram.section_08 .width_con .instagram_contents ul.four_con li .modal .modal-content .in {width: 480px; height: 480px;}
+    #history.section_09 .width_con .slider_box{position: relative; width: 580px; left: calc(50% - 290px);}
+    #history.section_09 .width_con .slider_box .slider{}
+    #history.section_09 .width_con .slider_box .slider .card img{width: 580px;}
+    #history.section_09 .width_con .slider_box .slider .card .text {top:46%;}
+    #history.section_09 .width_con .slider_box .slider .card_03 .text {width: 250px; top:46%;}
+    #history.section_09 .width_con .slider_box .slider .card .text h2{color:#fff; margin-bottom: 20px; font-size: 24px;}
+    #history.section_09 .width_con .slider_box .slider .card .text p{font-size: 14px;}
+    #history.section_09 .width_con .title_con h4{font-size: 12px;}
+    
+}
+
+@media all and (min-width:750px) and (max-width:899px){
+    
+    #Chocolate.section_03 .width_con .slider{width: 750px;}
+    #Chocolate.section_03 .width_con .slider .card .slide{width: 225px;}        
+    #Chocolate.section_03 .width_con .slider .text{padding: 10px;}
+    #Chocolate.section_03 .width_con .slider .text h5{font-size: 16px;}
+    #Chocolate.section_03 .width_con .slider .text h6{font-size: 12px;}
+        
+}
+
+@media all and (min-width:900px) and (max-width:999px){
+            
+    #Chocolate.section_03 .width_con .slider .text h5{font-size: 18px;}
+    #Chocolate.section_03 .width_con .slider .text h6{font-size: 14px;}
+    
+}
+
+@media all and (min-width:1000px) and (max-width:1239px){
+    
+    .width_con{ width: calc(100% - 80px);} /*마진 좌우 : 40*/
+    
+    #header .width_con .nav ul.nav_01 li{ font-size: 14px; margin: 0 0 0 15px; transition: all 0.3s ease-in-out;}
+    
+    h4{font-size: 14px; transition: all 350ms ease-in-out;}
+    
+    #visual.section_01 .slider .card img{width: 100%;}
+    #Chocolate.section_03 .width_con ul.four_con li .type{transform: translate(-50%, -75%) scale(.7);}
+    #Chocolate.section_03 .width_con ul.four_con li .text h6{font-size:12px;}
+    #Chocolate.section_03 .width_con .slider{width: 960px;}
+    #Chocolate.section_03 .width_con .slider .card .slide{width: 288px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text{padding: 10px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text h5{font-size:14px;}
+    #Collection.section_04 .width_con .tab_content ul.four_con li .text h6{font-size:12px;}
+    #collection.section_04 .four_con img{top:-60px;}
+    #Coffee.section_06 .width_con ul.six_con li .text h5{font-size: 18px;}
+    #Coffee.section_06 .width_con ul.six_con li .text h6{font-size: 12px;}
+    #Membership.section_07{ background: url(../img/mem_03.jpg) 50% no-repeat; background-size: cover;}
+    
+}
+
+@media all and (min-width:1240px) and (max-width:1449px){
+    
+    .width_con{ width: 1200px;}
+    
+    .four_con{width: calc(100% + 25px); margin: 0 -12.5px;}
+    .four_con > *{width: calc(25% - 25px); margin: 0 12.5px 25px;}
+        
+    #header .width_con .nav ul.nav_01 li{ font-size: 15px; margin: 0 0 0 25px; transition: all 0.3s ease-in-out;}
+    #visual.section_01 .slider .card img{width: 100%;}
+    
+}
+
+@media all and (min-width:1450px){
+    
+    #visual.section_01 .slider .card img{width: 100%;}    
+    #Chocolate.section_03 .width_con ul.four_con li .text h5{font-size: 20px;}
+    #Chocolate.section_03 .width_con ul.four_con li .text h6{font-size: 17px;}
+    
+}

@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>GODIVA :: Style Guide</title>
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/fontawesome_all.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <style type="text/css">
+
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;700&family=Merriweather:wght@300;400;700;900&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap');
+            @font-face { font-family: "Louis"; src: url("font/Louis George Cafe.ttf") format("truetype"); font-weight: normal;}
+            @font-face { font-family: "Louis Bold"; src: url("font/Louis George Cafe Bold.ttf") format("truetype"); font-weight: normal;}
+            body{font-family: "Louis Bold"; color: #3b1a0f; background-color: #f8f4eb;}
+            header h1{ position: relative; width: 1400px; margin: 0 auto; padding: 50px 0 0 0;}
+            .width_con{ position: relative; width: 1400px; margin: 0 auto; padding: 50px 0; overflow: hidden;}
+            h1{font-size: 32px; display: block;}
+            h2{font-size: 22px; line-height: 1.5em; font-family: "Louis";}
+            h3{font-size: 16px;}
+            h4{font-size: 32px; font-family: "Noto Sans KR"; line-height: 1.25em;}
+            h5{font-size: 32px; font-family: "Merriweather"; line-height: 1.25em;}
+            h6{font-size: 28px; margin-bottom: 18px;}
+            .title{margin: 50px 0;}
+            .line{position: relative; top: -17px; left: 120px;}
+            .line:before{position: absolute; content: ''; border-top: 2px solid #3b1a0f; width: 100%;}
+            .img{text-align: center;}
+            .img > *{margin: 0 20px;}
+            .colorbox{position:relative; width:200px; height:200px; display: inline-block; background-color:#3b1a0f; margin: 0 200px 20px 200px;}
+            .colorbox > *{position: relative; display: inherit; left: 240px; top:46px;}
+            .weight > *{display: inline-block; margin: 0 40px 0 40px;}
+            .weight > *{display: inline-block; margin: 0 40px 0 40px;}
+            .left{position: relative; width: 47%; margin-left: 200px;}
+            .right{position: relative; width: 38%;}
+            .right > *{margin-bottom: 30px; line-height: 1em;}
+            .icon1 > *{margin: 0 1px 0 0;}
+            .icon2 > *{margin: 0 2px 0 0;}
+
+            .slick-arrow{display: inline-block; width: 40px; height: 40px; border-radius: 20px; background-color: #32160d; transition: all linear .25s; cursor: pointer;}
+            .slick-arrow:hover{background-color: #21050a;}
+            .slick-arrow:active{transform: scale(.96);}
+            .fa-chevron-left{ color: #cfb56a;  font-size: 20px;  margin: 12px 0 0 13px; line-height: .7;}
+            .fa-chevron-right{ color: #cfb56a; font-size: 20px;  margin: 12px 0 0 17px; line-height: .7;}
+            .btns{position:absolute; display: inline-block; *display: inline; *zoom: 1; width: 200px; height: 40px; background-color: #32160d; color: #cfb56a ; box-sizing: border-box; border-radius: 8px; box-shadow: 0 10px 30px -15px rgba(0,0,0,.65); text-align: center; text-decoration: none; line-height: 40px;  font-size: 14px; font-weight: 600; cursor: pointer; border:none; vertical-align: top; transition: all 125ms linear;}
+            .btns:hover{box-shadow: 0 8px 24px -12px rgba(0,0,0,.85); color: #cfb56a;}
+            .btns:active{box-shadow: 0 1px 3px -2px rgba(0,0,0,1); transform: scale(.985);}
+            .btn_01{top: 400px; background:#fff; color: #222;}
+
+            .tabs{position: relative; height: 40px; margin: 160px 157px 0 0; text-align: center;}
+            .tabs ul{padding: 0 20px;}
+            .tabs ul li{position: relative; display: inline-block; *display: inline; *zoom: 1; height:38px; line-height: 16px; padding: 6px 5% 0; margin: -4px 0 -2px 0; border-radius: 5px 5px 0 0; font-weight: 600; transition: all 0.15s ease-in-out; cursor: pointer; font-size: 16px;}
+            .tabs ul li.selected{cursor: default; pointer-events: none;}
+            .tabs ul li:after,
+            .tabs ul li:before{position: absolute; content: ''; height: 5px; width: 5px; bottom: 0; opacity: 0; transition: inherit;}
+            .tabs ul li:after{right: -5px;}
+            .tabs ul li:before{left: -5px;}
+            .tabs ul li.selected:after,
+            .tabs ul li.selected:before{opacity: 1;}
+            .tabs:before,
+            .tabs:after {position: absolute; content:''; width: 100%; left: 0; pointer-events: none;}
+            .tabs:before {height: 40px; top: 100%; background: linear-gradient(180deg, #e1d8c6 0%, transparent 100%);}
+            .tabs:after {height: 200%; top: 0; background: linear-gradient(90deg,  #f8f4eb 1%, transparent 10%, transparent 90%,  #f8f4eb 99%);}
+            .tabs ul{margin: 0 auto;}
+            .tabs ul li{color: #222;}
+            .tabs ul li:after{background: radial-gradient(circle at 100% 0%, transparent 4.5px, #e1d8c6 5px); transform-origin: bottom left;}
+            .tabs ul li:before{background: radial-gradient(circle at 0% 0%, transparent 4.5px, #e1d8c6 5px); transform-origin: bottom right;}
+            .tabs ul li.selected{background: #e1d8c6; color: #3b1a0f; box-shadow: 0 -2px 0px #cfb56a;}
+
+        </style>
+
+        <script>
+
+        $(window).load(function(){
+            $(".tabs li").click(function(){
+                var tab_id = $(this).attr("data-tab");
+                $(".tabs li").removeClass("selected");
+                $(this).addClass("selected");
+                $("#"+tab_id).addClass("selected");
+            })
+        });
+
+        </script>
+    </head>
+    <body>
+    <header>
+        <h1>GODIVA<br>WEBPAGE STYLE GUIDE</h1>
+    </header>
+        <div class="wrap">
+            <div class="width_con">
+                <div class="logo">
+                    <div class="title">
+                        <h1>LOGO</h1>
+                        <div class="line"></div>
+                    </div>
+                    <div class="img">
+                        <img src="portfolio/godiva/img/logo_01.png">
+                        <img src="portfolio/godiva/img/logo_02.png">
+                        <img src="portfolio/godiva/img/logo_03.png">
+                    </div>
+                </div>
+                <div class="color">
+                    <div class="title">
+                        <h1>COLOR</h1>
+                        <div class="line"></div>
+                    </div>
+                    <div class="colorbox">
+                        <h2>#3b1a0f</h2>
+                        <h3>(MAIN COLOR)</h3>
+                        <h2>59, 26, 15</h2>
+                        <h2>48%, 77%, 78%, 72%</h2>
+                    </div>
+                    <div class="colorbox" style="background-color: #222;">
+                        <h2>#222222</h2>
+                        <br>
+                        <h2>34, 34, 34</h2>
+                        <h2>72%, 66%, 64%, 72%</h2>
+                    </div>
+                    <div class="colorbox" style="background-color: #cfb56a;">
+                        <h2>#cfb56a</h2>
+                        <h3>(POINT COLOR)</h3>
+                        <h2>207, 181, 106</h2>
+                        <h2>20%, 25%, 70%, 0%</h2>
+                    </div>
+                    <div class="colorbox" style="background-color: #fff;">
+                        <h2>#ffffff</h2>
+                        <br>
+                        <h2>255, 255, 255</h2>
+                        <h2>0%, 0%, 0%, 0%</h2>
+                    </div>
+                </div>
+                <div class="TYPOGRAPHY">
+                    <div class="title" style="margin: 30px 0 50px 0;">
+                        <h1>TYPOGRAPHY</h1>
+                        <div class="line" style="left: 220px;"></div>
+                    </div>
+                    <div class="left" style="display: inline-block;">
+                        <div class="name" style="float: left;">
+                            <h4 style="font-size: 48px;">Aa</h4>
+                            <h4 style="font-size: 24px; margin-bottom: 40px;">Noto Sans</h4>                     
+                            <h5 style="font-size: 48px;">Aa</h5>
+                            <h5 style="font-size: 24px;">Merriweather</h5>
+                        </div>
+                        <div class="weight">
+                            <h4 style="font-weight: 300">Light300</h4>
+                            <h4 style="font-weight: 400; margin-left: 57px;">Regular400</h4>
+                            <h4 style="font-weight: 500; margin-bottom: 60px;">Medium500</h4>
+                            <h4 style="font-weight: 600; margin-left: 2px;">Bold600</h4>
+                        </div>
+                        <div class="weight">
+                            <h5 style="font-weight: 300">Light300</h5>
+                            <h5 style="font-weight: 400">Regular400</h5>
+                            <h5 style="font-weight: 500">Medium500</h5>
+                            <h5 style="font-weight: 600; margin-left: -10px;">Bold600</h5>
+                        </div>
+                    </div>
+                    <div class="right" style="display: inline-block;">
+                        <h4 style="font-weight: 600; font-size: 48px;">H1 : First Headline</h4>
+                        <h5 style="font-weight: 400; font-size: 32px;">H2 : Second Headline</h5>
+                        <h4 style="font-weight: 500; font-size: 24px;">H3 : Subtilte Headline</h4>
+                        <h4 style="font-weight: 600; font-size: 18px;">H4 : Subtitle Descprption</h4>
+                        <h5 style="font-weight: 600; font-size: 24px;">H5 : Subtilte Headline</h5>
+                        <h4 style="font-weight: 300; font-size: 18px; margin-bottom: 0;">H6 : Subtitle Descprption</h4>
+                    </div>
+                </div>
+                <div class="UI">
+                    <div class="title">
+                        <h1>UI ELEMENTS</h1>
+                        <div class="line" style="left: 220px;"></div>
+                    </div>
+                    <div class="icon" style="position: relative; left: 200px;">
+                        <h6>ICON</h6>
+                        <div class="icon1">
+                            <img src="portfolio/godiva/img/icon_01.png">
+                            <img src="portfolio/godiva/img/icon_02.png">
+                            <img src="portfolio/godiva/img/icon_03.png">
+                            <img src="portfolio/godiva/img/icon_04.png">
+                            <img src="portfolio/godiva/img/icon_05.png">
+                            <img src="portfolio/godiva/img/icon_06.png">
+                            <img src="portfolio/godiva/img/icon_07.png">
+                            <img src="portfolio/godiva/img/icon_08.png">
+                            <img src="portfolio/godiva/img/icon_09.png">
+                        </div>
+                        <br>
+                        <div class="icon2">
+                            <img src="portfolio/godiva/img/icon_10.png">
+                            <img src="portfolio/godiva/img/icon_11.png">
+                            <img src="portfolio/godiva/img/icon_12.png">
+                            <img src="portfolio/godiva/img/icon_13.png">
+                            <img src="portfolio/godiva/img/icon_14.png">
+                            <img src="portfolio/godiva/img/icon_15.png">
+                            <img src="portfolio/godiva/img/icon_16.png">
+                            <img src="portfolio/godiva/img/icon_17.png">
+                        </div>
+                        <div class="button" style="margin-top: 50px;">
+                            <h6>BUTTON</h6>
+                            <a class="slick-next slick-arrow"><i class="far fa-chevron-left"></i></a>
+                            <a class="slick-next slick-arrow"><i class="far fa-chevron-right"></i></a>
+                            <a class="btns" style="top:300px; left: 0;">More View</a>
+                            <a class="btns btn_01" style="top:360px; left: 0;">More View</a>
+                        </div>
+                        <div class="tabs">
+                            <ul>
+                                <li class="tab_link selected" data-tab="tab_1">NEW<br>ARRIVALS</li><!--
+                             --><li class="tab_link" data-tab="tab_2">ASSORTED<br>COLLECTION</li><!--
+                             --><li class="tab_link" data-tab="tab_3">TRUFFLE<br>COLLECTION</li><!--
+                             --><li class="tab_link" data-tab="tab_4">LUXURY<br>COLLECTION</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <div class="title" style="margin: 70px 0 50px 0;">
+                            <h1>LAYOUT</h1>
+                            <div class="line"  style="left: 150px;"></div>
+                        </div>
+                        <img src="img/LAY-OUT.png" style="position: relative; left: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

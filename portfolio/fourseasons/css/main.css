@@ -1,0 +1,281 @@
+@charset "UTF-8";
+.wait_scroll{ opacity: 0; position: relative; }
+.show_trigger{ position: absolute; bottom: 400px; left: 50%; content:''; width: 1px; height: 1px;}
+.sections{ transition: all .5s linear; }
+/* visual----------------------------------------*/
+#visual.section_02{ overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } /*overflow : 크기를 넘는 부분은 전부 숨김 처리*/
+#visual.section_02 iframe#video_con_01{ position: absolute; top: -300px; left: 0; width: 100%; height: calc(100% + 600px); pointer-events: none; vertical-align: top;}
+#visual.section_02 img.guide_ratio{ position: relative; width: 100%; } /*영상의 비율 조정하기 위한 이미지*/
+#visual.section_02 .width_con{ }
+
+
+/*reservation----------------------------------------*/
+#datepicker,#datepicker2{border: none; font-size: 20px; font-weight: 600; width: 102px; cursor: pointer; }
+#reservation.section_03 { }
+#reservation.section_03 .width_con {padding-bottom: 0; }
+#reservation.section_03 .width_con .guide_menu{content:''; position: absolute; bottom: 700px;}
+#reservation.section_03 .width_con .wrap { position: relative; margin: -230px 0 0 0; width: inherit;  border-radius: 10px;  background: rgba(255,255,255,0.1); backdrop-filter: blur(20px);  box-shadow : inset 0 0 8px 0 rgba(255,255,255,0.5);}
+
+#reservation.section_03 .width_con .wrap .title_con { display: inline-block; *display: inline; *zoom: 1; margin: 24px 67px ;}
+#reservation.section_03 .width_con .wrap .title_con h2 {font-size: 40pt; text-transform: uppercase;}
+
+#reservation.section_03 .width_con .wrap .btn { position: absolute; right: 0; margin: -71px 68px 0 0 ;}
+#reservation.section_03 .width_con .wrap .btn i {margin-left: 20px; }
+#reservation.section_03 .width_con .wrap .btn .btns.btn_a {}
+#reservation.section_03 .width_con .wrap .btn .btns.btn_b {margin: 0 0 0 18px ;}
+
+#reservation.section_03 .width_con .wrap .info_con span { color: #eee;}
+#reservation.section_03 .width_con .wrap .info_con span h6 { font-size: 16px; margin: 0 0 15px 0; }
+#reservation.section_03 .width_con .wrap .info_con span h5 { font-size: 20px; }
+
+#reservation.section_03 .width_con .wrap .info_con .info{display: inline-block; *display: inline; *zoom: 1; margin: 30px 24px 0 67px; text-transform: uppercase;}
+#reservation.section_03 .width_con .wrap .info_con .info:nth-child(4){ margin: 0 0 0 67px;}
+#reservation.section_03 .width_con .wrap .info_con .info .inline select{ margin: 0 0 0 -4px; padding: 0 0 0 0 ;text-transform: uppercase; cursor: pointer; }
+#reservation.section_03 .width_con .wrap .info_con .info .inline select:hover{ box-shadow: 0 0 0 2px #000 inset; box-sizing: border-box; border-radius: 6px; }
+#reservation.section_03 .width_con .wrap .info_con .info i.fa-plus{ padding: 0 0 0 10px; cursor: pointer;}
+#reservation.section_03 .width_con .wrap .info_con .info i.fa-minus{ padding: 0 10px 0 0; cursor: pointer;}
+#reservation.section_03 .width_con .wrap .info_con .info.reservation span.inline {display: inline-block; *display: inline; *zoom: 1;}
+#reservation.section_03 .width_con .wrap .info_con .info.reservation .inline .room { padding-right: 14px;}
+
+#reservation.section_03 .width_con .wrap .info_con .info.hotel i {padding-left: 6px;}
+#reservation.section_03 .width_con .wrap .info_con .info.hotel span.inline {display: inline-block; *display: inline; *zoom: 1;}
+
+#reservation.section_03 .width_con .wrap .info_con .info.check i {padding-left: 6px;}
+#reservation.section_03 .width_con .wrap .info_con .info.check .form {margin: 0 0 0 -8px;}
+#reservation.section_03 .width_con .wrap .info_con .info.check div {display: inline-block; *display: inline; *zoom: 1;}
+#reservation.section_03 .width_con .wrap .info_con .info.check h5 {display: inline-block; *display: inline; *zoom: 1; margin: 0 5px;}
+#reservation.section_03 .width_con .wrap .info_con .info.check h6 {margin-top: -34px;}
+
+
+#reservation.section_03 .width_con .wrap .info_con .info.check span.inline {display: inline-block; *display: inline; *zoom: 1;}
+
+#reservation.section_03 .width_con .wrap .info_con .info.count .select { display: inline-block; *display: inline; *zoom: 1; text-align: center; margin: 0 36px 0 0;}
+#reservation.section_03 .width_con .wrap .info_con .info.count .select:nth-child(3) { margin: 0 0 0 0; }
+#reservation.section_03 .width_con .wrap .info_con .info.count .select span.inline {  display: inline-block; *display: inline; *zoom: 1;}
+#reservation.section_03 .width_con .wrap .info_con .info.count i { cursor: pointer; }
+#reservation.section_03 .width_con .wrap .info_con .info.count i.limit { color: #d3d3d3; }
+#reservation.section_03 .width_con .wrap .info_con .info.count span h6 {margin: 0 0 20px 0; }
+
+
+/* Accommodation--------------------------------------*/
+#accommodations.section_04{ background: #fff; }
+#accommodations.section_04 .width_con .title_con.center{ display: block; margin: 0 0 60px 0; }
+#accommodations.section_04 .width_con .accommo{ display:block; width: inherit; height: 700px; border-radius: 10px; overflow: hidden}
+/* 라디오 인풋을 이용했으며 인풋에 라벨을 이어 버튼으로 사용하므로 인풋 자체는 보여질 필요가 없음, 인풋 자체는 보이지 않게 가림 */
+input.button { display:none;}
+/* 라디오 인풋에 체크가 되면, 인접한 .contents 상자를 보이게 함 checked가 아니면 hidden에 width:0*/
+input[type=radio]:checked + .contents{ visibility: visible; width:calc(100% - 309px);}
+/* 메뉴 버튼 디자인 */
+/*float:right는 accommo섹션안의 오른쪽정렬을 위한 선언 123 숫자 자르기 위한 overflow:hidden, 아코디언 버튼처럼 보이기위해 cursor:pointer opacity는 너무똥색이라..*/
+.label{ height: 100%; width: 103px; display: inline-block; float: right; overflow: hidden; cursor: pointer; transition: all 1 linear;}
+.label.a{ background:#d7cfc6; }
+.label.b{ background:#bcad9e; }
+.label.c{ background:#af9f8c; }
+.label h1{ color: #eee; margin:-30px -40px 0 0; padding: 0 0 30px 40px;}
+.label h3{font-size: 24px; color: #eee; margin: 440px 0 0 0; text-align: right; transform: rotate(90deg);}
+/* 컨텐츠 본문 */
+.contents { position:relative; visibility: hidden; float:right; height:100%; width:0; transition:all .8s ease-in-out; overflow: hidden; }
+.contents .info{ position:absolute; bottom: 30px; left: 30px; z-index: 99; color:#eee; width: 260px; opacity: .8;}
+.contents .info hr{ }
+.contents .info h5, .contents .info h6, .contents .info i{ color : #eee; display:inline-block; *display:inline; *zoom: 1; margin: 0 10px 0 0;}
+.contents .info h5{}
+.contents .info h6{ line-height: 1em; margin-top: 10px;}
+/*밑의 자식이 많이 늘어나도 일정간격 유지를 위한 display: table */
+.inner { display: table; height:100%; margin:0 auto; cursor: pointer; }
+.inner img{ }
+/*???? 인터넷 보고 slick-slide에 width값 지정해주길래 조정하다보니 left값처럼 설정된다. 이유는 모름*/
+.inner .slick-slide{ width:0px;}
+.inner ul.slick-dots{ bottom: 36px !important; width: 96px; left: calc(50% - 48px);}
+.inner ul.slick-dots > li{ border: 2px solid rgba(238,238,238,1);}
+.inner ul.slick-dots > li.slick-active{ background: rgba(238,238,238,1); }
+.inner .slick-arrow{ background: none !important; filter: drop-shadow(1px 3px -2px rgba(0,0,0,.5));}
+.inner .slick-prev:before{ margin: 0 0 0 28px; font-size: 48px !important; }
+.inner .slick-next:before{ margin: 0 0 0 -40px; font-size: 48px !important; }
+.slick-arrow:hover{ filter: drop-shadow(2px 6px -4px rgba(0,0,0,.6));}
+.slick-arrow:active{ transform: scale(.96); transition: all linear .25s; }
+/*-offer----------------------------------------*/
+/*유튜브 영상 자르기*/
+#offers.section_05{ }
+#offers.section_05 .video_con{ overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 88%); width: inherit;}
+#offers.section_05 .video_con .title_con{ position:absolute; z-index:1; top:120px; left: calc( 50% - 91.295px);}
+#offers.section_05 .video_con iframe#video_con_02{ vertical-align: top; position: absolute; top: -400px; left: 0; width: 100%; height: calc(100% + 600px); pointer-events: none; -webkit-mask-box-image: linear-gradient(rgba(0,0,0,1) 0px, rgba(0,0,0,1) 960px, rgba(0,0,0,1) 1030px, rgba(0,0,0,0) 1100px); }
+#offers.section_05 .video_con img.guide_ratio{ position: relative; width: 100%; } 
+/*이미지 단잡기*/
+#offers.section_05 .width_con.no_padding{ }
+#offers.section_05 .width_con .img_con{ width: calc(100% + 36px); margin: -120px -18px 0 -18px; } 
+#offers.section_05 .width_con .img_con .img_offer{ width: calc(25% - 36px); overflow: hidden; display: inline-block; *display: inline; *zoom: 1; margin: 0 18px; border-radius: 10px; opacity: 0; box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .5);}
+#offers.section_05 .width_con .img_con .img_offer img{ transition: all 0.3s linear; vertical-align: middle;}
+
+/*글씨 배경색으로 가시성 확보, 글씨 하단과 왼쪽 마진 맞춰 띄우기*/
+#offers.section_05 .width_con .img_con .img_offer .img_offer_info{ background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.65)); position: absolute; width: 273px; bottom: 0; left: 0; }
+#offers.section_05 .width_con .img_con .img_offer .img_offer_info h3{ font-weight: 600; margin:0 0 10px 10px; padding:0; font-size: 22px; color: #eee; width: 200px;}
+/*아이콘 기본 숨겨놓기*/
+#offers.section_05 .width_con .img_con .img_offer .img_offer_info a i{ transition: all 0.35s linear; position:absolute; opacity: 0; bottom: 10px; right: 20px; color:#eee; font-size: 22px;}
+/*높이가 맞으면 순서대로 이미지가 올라온다, 기존 단을 맞추기 위해 양 끝 이미지의 마진부분 커트*/
+#offers.section_05 .width_con .img_con .img_offer{transition: all 0.6s ease-out , opacity 0.6s linear;}
+#offers.section_05 .width_con .img_con .img_offer:nth-child(2){ transition-delay:0.2s;}
+#offers.section_05 .width_con .img_con .img_offer:nth-child(3){ transition-delay:0.4s;}
+#offers.section_05 .width_con .img_con .img_offer:nth-child(4){ transition-delay:0.6s;}
+/*이미지에 호버,액티브 시에 줌인, 뚜렷하게, 밝아지게, 아이콘 올라오고 드랍쉐도우*/
+#offers.section_05 .width_con .img_con .img_offer:hover img{ transform: scale(1.05); opacity: 1; transition: all 0.3s linear; filter:brightness(104%); cursor: pointer;}
+#offers.section_05 .width_con .img_con .img_offer:hover .img_offer_info a i{opacity: 1; bottom: 20px; cursor: pointer;}
+#offers.section_05 .width_con .img_con .img_offer .img_offer_info a i:active{transform:scale(0.95); filter:drop-shadow(3px 3px 6px rgba(0,0,0,.1)); }
+
+/*-For Vip--------------------------------------------*/
+#forvip.section_06 { position: relative; height: 820px; background: url(../img/bg_forvip.jpg) 50% no-repeat; background-size: cover;  background-attachment: fixed; overflow: hidden; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); -webkit-mask-box-image: linear-gradient(rgba(0,0,0,0) 0px, rgba(0,0,0,1) 80px, rgba(0,0,0,1) 740px, rgba(0,0,0,0) 820px); } /*-overflow: hidden;은 position:fixed;에 적용되지 않기때문에 clip-path: polygon과 같이 세트로 사용해야함-*/
+#forvip.section_06:after,
+#forvip.section_06:before{position: fixed; left:0; width: 100%; height:318px; content:''; z-index: 1; pointer-events: none;}
+#forvip.section_06:after{ top: 80px; background: url(../img/bg_cloud_bottom.png) no-repeat; background-size: cover;} 
+#forvip.section_06:before{ bottom:0; background: url(../img/bg_cloud_top.png) no-repeat; background-size: cover;}
+
+#forvip.section_06 .width_con {}
+#forvip.section_06 .width_con .title_con.left{ position: relative; top: 80px; vertical-align: middle;}
+#forvip.section_06 .width_con .title_con h3{}
+#forvip.section_06 .width_con .title_con h2{}
+#forvip.section_06 .width_con .title_con h4{}
+#forvip.section_06 .width_con img{ position: absolute; width: 1000px;  top: 115px; left: 243px; }
+/*Amenities----------------------------------------------------*/
+/*bg*/
+#amenities.section_07 { position: relative; background: url(../img/bg_amenities_02.jpg) 50% no-repeat; background-size: cover;}
+#amenities.section_07 .width_con{}
+/*title_con (67*3)+(36*2) */
+#amenities.section_07 .width_con .title_con.left{ display: inline-block; *display: inline; *zoom: 1; width: 273px; padding-top:50px; vertical-align: top;}
+#amenities.section_07 .width_con .title_con h3{}
+#amenities.section_07 .width_con .title_con h2{}
+#amenities.section_07 .width_con .title_con h4{}
+#amenities.section_07 .width_con .title_con a.btn_a{}
+/*slide_con (67*9)+(36*8) + 왼쪽 margin 밀어서 위치고정*/
+#amenities.section_07 .width_con .slider{ display:inline-block; *display:inline; *zoom: 1; width: 891px; vertical-align: middle; margin: 0 0 0 36px;} 
+/*-webkit-mask-box-image: linear-gradient(90deg, rgba(0,0,0,0) -20px, rgba(0,0,0,1) 10px, rgba(0,0,0,1) 881px, rgba(0,0,0,0) 911px);*/
+/*카드 하나당 (67*3)+(36*2)*/
+#amenities.section_07 .width_con .slider .card{ display:inline-block; *display:inline; *zoom: 1; width: 273px; vertical-align: middle; box-shadow: 0 3px 9px -3px rgba(0,0,0,.65); border-radius: 10px;  }
+/*카드이미지는 카드안에 맞춰 (67*3)+(36*2), 각조지기*/
+#amenities.section_07 .width_con .slider .card img{ position:relative; width: 100%; }
+/*넘치는거 자르기, 검사로 하나씩 넣어보다 얻어걸림*/
+#amenities.section_07 .width_con .slider.slick-slider{ }
+#amenities.section_07 .width_con .slider.slick-track{ padding: 15px 0 ; }
+/*슬라이드 사진간의 간격*/
+#amenities.section_07 .width_con .slider .slick-slide{ position: relative; margin: 0 18px; overflow: hidden; } 
+/*사진간의 간격을 주면 이미지 사이즈가 달라지기 때문에 슬라이드 양옆 margin을 빼주면 사진크기는 그대로고 간격만 벌어짐*/
+#amenities.section_07 .width_con .slider.slick-slider .slick-list{ margin: 0 -18px; }
+#amenities.section_07 .width_con .slider.slick-slider .slick-list.draggable{ -webkit-mask-box-image: linear-gradient(to right, rgba(0,0,0,0) 0, rgba(0,0,0,1) 10px, rgba(0,0,0,1) 900px, rgba(0,0,0,0) 927px); }
+/*before hovering*/
+#amenities.section_07 .width_con .slider .card .info{ position:absolute; height: 20%; width: 273px; bottom: 0; background: linear-gradient(rgba(0,0,0,0) 0,rgba(0,0,0,0) 50%, rgba(0,0,0,.8) 100%); }
+#amenities.section_07 .width_con .slider .card .info:before{ position: absolute; bottom: -20%; left: 0; content:''; width: inherit; height:100%; background: linear-gradient(rgba(0,0,0,0) 0, rgba(0,0,0,1) 100px); transition: all .3s ease-in-out; opacity: 0; }
+#amenities.section_07 .width_con .slider .card .info h5,
+#amenities.section_07 .width_con .slider .card .info h6{ margin-left: 10px; color: #eee; position: relative; transition: all .25s ease-out;}
+#amenities.section_07 .width_con .slider .card .info h5{ bottom: -55px;  }
+#amenities.section_07 .width_con .slider .card .info h6{ bottom: -60px; margin-top: 15px; opacity: 0; }
+/*hovering info*/
+#amenities.section_07 .width_con .slider .card:hover{ }
+#amenities.section_07 .width_con .slider .card:hover .info > * {bottom: -10px; opacity: 1; }
+#amenities.section_07 .width_con .slider .card:hover .info:before{ opacity: 1; bottom:0; }
+/*-service-----------------------------------*/
+#service.section_08 {background: #fff url(../img/logo_service_tree.svg) 1400px 300px no-repeat; background-size: 25%;}
+#service.section_08 .width_con{}
+#service.section_08 .width_con .main{ display: inline-block; *display: inline; *zoom: 1; width: 582px; height: 398px; border-radius: 10px; transition: all linear .5s;}
+#service.section_08 .width_con .main_01{  }
+#service.section_08 .width_con .sub{ display: inline-block; *display: inline; *zoom: 1; vertical-align:top; }
+#service.section_08 .width_con .sub .border{ display: inline-block; *display: inline; *zoom: 1; }
+
+#service.section_08 .width_con img{ border-radius: 10px; }
+#service.section_08 .width_con .sub img{ position: relative; }
+/* 서브 이미지 간격 */
+#service.section_08 .width_con .img_sub_01 { margin: 0 0 0 36px; }
+#service.section_08 .width_con .img_sub_01 .border:nth-child(3){ margin: 0 36px; }
+#service.section_08 .width_con .img_sub_02 { margin: 0 36px 0 0; }
+#service.section_08 .width_con .img_sub_02 .border:nth-child(3){ margin: 0 36px; }
+/* 서브 이미지 hover 효과 */
+#service.section_08 .width_con .sub .border { position: relative; }
+#service.section_08 .width_con .sub .border:hover{ cursor: pointer; }
+#service.section_08 .width_con .sub .border:active{ transform: scale(.95); transition: all ease-in-out .5s; }
+
+/* 박스 체크시 테두리 유지 */
+#service.section_08 .width_con .sub .border .border_box{position: absolute; top:50%; left:50%; width:150px; height: 150px; transform: translate(-50%, -50%); transition: all .8s; z-index: 1; border: 3px solid #eee; box-shadow: 0 3px 9px 7px rgba(0,0,0,.5);  border-radius: 10px; opacity: 0; }
+#service.section_08 .width_con .sub .border .border_box.show{ opacity: 1; }
+#service.section_08 .width_con .sub .border.point{ pointer-events: none; }
+
+
+/*테두리 생성*/
+#service.section_08 .width_con .sub .border:before,
+#service.section_08 .width_con .sub .border:after{ content:''; position: absolute; top:50%; left:50%; width:150px; height: 150px; transform: translate(-50%, -50%); transition: all .8s; z-index: 1; }
+#service.section_08 .width_con .sub .border:before{border-top:2px solid #eee; border-bottom:2px solid #eee; width:0; }
+#service.section_08 .width_con .sub .border:after{border-left:2px solid #eee; border-right:2px solid #eee; height:0; }
+#service.section_08 .width_con .sub .border:hover:before { width: 150px; }
+#service.section_08 .width_con .sub .border:hover:after { height: 150px; }
+/* title_con 글씨 */
+#service.section_08 .width_con .title_con{ width: 568px; transition: all ease-in-out .35s; }
+#service.section_08 .width_con .title_con.left{ margin:0 0 40px 0; }
+#service.section_08 .width_con .title_con.right{ margin: 0 0 48px 0; height:96px;}
+#service.section_08 .width_con .title_con h3{ }
+#service.section_08 .width_con .title_con h2{ }
+#service.section_08 .width_con .title_con h4{ font-size: 16px; }
+#service.section_08 .width_con .title_con.right h4:before{ display: none; }
+
+/*-Membership-----------------------------------------*/
+#membership.section_09{ position: relative; background: url(../img/bg_membership_01.jpg) 50% no-repeat; background-size: cover; overflow: hidden; }
+#membership.section_09:before{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: ''; background: rgba(0,0,0,.65) url(../img/cover_dot_pattern.png); opacity: .65;}
+#membership.section_09 .width_con{ overflow: hidden; -webkit-mask-box-image: linear-gradient(to right, rgba(0,0,0,0) 0, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 1170px, rgba(0,0,0,0) 1200px);}
+#membership.section_09 .width_con .title_con { } 
+#membership.section_09 .width_con .title_con h3{}
+#membership.section_09 .width_con .title_con h2{}
+#membership.section_09 .width_con .title_con h4{}
+#membership.section_09 .width_con .cards_slider{ position: relative; margin: 60px 0 0 0; }
+#membership.section_09 .width_con .cards_slider .card{ margin: 0 18px; }
+/*카드뒤집기 시작--*/
+#membership.section_09 .width_con .cards_slider .card .item{ backface-visibility: hidden; transition: 1s; }
+#membership.section_09 .width_con .cards_slider .card .item.front{ transform: rotateY(0deg);}
+#membership.section_09 .width_con .cards_slider .slick-center.card.flip .item.front{transform: rotateY(180deg); }
+#membership.section_09 .width_con .cards_slider .card .item.back{position: absolute; top:0; width: inherit; transform: rotateY(-180deg);}
+#membership.section_09 .width_con .cards_slider .slick-center.card.flip .item.back{ transform: rotateY(0deg); }
+/*--카드뒤집기 끝*/
+#membership.section_09 .width_con .cards_slider .card .item img{ filter: drop-shadow(5px 5px 10px rgba(0,0,0,.5)); width: 100%; transition: all linear .5s; cursor: pointer; }
+#membership.section_09 .width_con .cards_slider .slick-slide { transition: all linear .35s; transform: scale(.9);}
+#membership.section_09 .width_con .cards_slider .slick-center{ perspective: 1500px; transform: scale(1.1);}
+#membership.section_09 .width_con .slick-dots{}
+#membership.section_09 .width_con .cards_slider .slick-list.draggable{padding: 50px 0 !important; margin: -50px 0 !important; }
+/*슬릭 자체 패딩과 마진으로 인해 카드 잘리므로 강제로 적용*/
+/*-section_10 instagram-----------------------------------*/
+#instagram.section_10{}
+#instagram.section_10 .width_con .img_con{width: calc(100% + 36px); margin: 0 -18px;}
+#instagram.section_10 .width_con .img_con .img_slide{ display: inline-block; *display:inline; *zoom:1; width: calc(33.333% - 36px); margin: 0 18px; position:relative; border-radius: 10px; vertical-align: top; overflow:hidden;}
+#instagram.section_10 .width_con .img_con .img_slide .info{ width:100%; position: absolute; background:linear-gradient(0deg, rgba(0,0,0,0) 0, rgba(0,0,0,.65) 60px); top:0; height: 60px;}
+#instagram.section_10 .width_con .img_con .img_slide .info h5{ position:relative; color: #eee; margin: 25px 0 0 54px;} 
+#instagram.section_10 .width_con .img_con .img_slide .info img{ position: absolute; width: 25px; height: 25px; top: 19px; left: 15px; border: 2px solid transparent; border-radius: 50%; background-image: linear-gradient(#fff, #fff), linear-gradient(225deg, rgba(191,14,180,1) 0%, rgba(243,190,98,1) 85%); background-origin: border-box; background-clip: content-box, border-box;}
+#instagram.section_10 .width_con .img_con .img_slide img{ position:relative; width: 100%; vertical-align: top; transition: all .3s linear;}
+#instagram.section_10 .width_con .img_con .img_slide:hover > img{ transform: scale(1.05); opacity: 1; transition: all .3s linear; filter:brightness(104%); cursor: pointer; }
+
+/*---------section_11 contact------------------------------------*/
+#contact.section_11 { position: relative; height: 800px; overflow: hidden; background:#222; }
+#contact.section_11 iframe#map_con{ position: absolute; width: calc(100% + 480px); height: 1215px; margin: -150px 0 0 0; border: none; filter: invert(.9) grayscale(1); pointer-events: none; }
+#contact.section_11 img#marker { position: absolute; top:50%; left: 50%; width: 88px; margin: -4px 0 0 196px; opacity:0; transition:all 0.5s linear;}
+#contact.section_11 img#marker.show{ opacity:1;}
+#contact.section_11 .width_con {}
+#contact.section_11 .width_con .box { position: absolute; content: ''; top: 140px; left: 0; width: 412px; height: 373px; background: rgba(175, 159, 140, .65); backdrop-filter: blur(20px); box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .85); border-radius: 10px; opacity: .95; transition: all 500ms ease-out ;opacity:0; overflow:hidden;}
+#contact.section_11 .width_con .box.show{  opacity:1; z-index:1; height:520px; }
+#contact.section_11 .width_con .box.box_menu img{ padding:10px 69px; width: 274px; vertical-align: middle; background:#333;}
+#contact.section_11 .width_con .box.box_menu { height: 520px; }
+#contact.section_11 .width_con .box.box_menu.show{ height:373px; }
+#contact.section_11 .width_con .box.box_menu div{ padding:20px; cursor:pointer; }
+#contact.section_11 .width_con .box.box_menu div:hover{ background:#928576; }
+#contact.section_11 .width_con .box.box_menu hr{  background:#dac7b1; margin:0; }
+#contact.section_11 .width_con .box.box_menu div h2{ vertical-align:middle; font-size:26px; color:#222; margin:0 0 2px 4px; display:inline-block; *zoom:1; *display:inline; width:287px;}
+#contact.section_11 .width_con .box.box_menu div i{display:inline-block; *zoom:1; *display:inline; margin-left:61px; font-size:25px; vertical-align:middle;}
+#contact.section_11 .width_con .box.box_info_con { }
+#contact.section_11 .width_con .box .contact_img { position: relative; width: 412px; border-radius: 10px;}
+#contact.section_11 .width_con .box .contact_logo{ position: relative; width: auto; vertical-align: top; }
+#contact.section_11 .width_con .box .contact_logo{  bottom: 60px; height: 60px; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); }
+#contact.section_11 .width_con .box .contact_logo a{ position:absolute; margin: 17px 15px 0; font-size: 25px; color: #eee;  cursor: pointer; transition: all 125ms linear; }
+#contact.section_11 .width_con .box .contact_logo a:hover{ box-shadow: 0 8px 24px -12px rgba(0,0,0,.85); }
+#contact.section_11 .width_con .box .contact_logo a:active{ box-shadow: 0 1px 3px -2px rgba(0,0,0,1); transform: scale(.75); }
+#contact.section_11 .width_con .box .contact_logo img{ position:absolute; width: 150px; margin: 11px 0 0 45px; }
+#contact.section_11 .box div.box_info{ position: absolute; margin: -15px 0 0 30px; }
+#contact.section_11 .box div.box_info .title_con.left { position: relative; }
+#contact.section_11 .box div.box_info .title_con h5{}
+#contact.section_11 .box div.box_info .title_con h5.info,
+#contact.section_11 .box div.box_info .title_con h5.number{ position: absolute; margin: 24px 0 0 0; }
+#contact.section_11 .box div.box_info .title_con h5.number{ right:-20px; }
+#contact.section_11 .box div.box_info .title_con h5:after{ display: none; }
+#contact.section_11 .box div a.btn_b{ font-weight: 700; font-size: 14px;  border-radius: 10px; text-align: center; cursor: pointer; background:#222; color:#fff; margin: 109px 0 0 0;}
+#contact.section_11 .box div a.btn_b:hover{ background: #333; box-shadow: 0 8px 24px -12px rgba(34,34,34,.85);}
+#contact.section_11 .box div a.btn_b:active{ box-shadow: 0 1px 3px -2px rgba(34,34,34,1);}

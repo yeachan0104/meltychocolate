@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>S.E.A. AQUARIUM</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/fontawesome_all.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon_01.png" type="image/x-icon" sizes="16x16">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/array.js"></script>
+</head>
+<body>
+    <div id="waiting" class="box">
+        <img src="img/logo_01.png">
+    </div>
+    <div id="header" class="hide">
+        <a href="javascript:;" class="logo">
+            <img src="img/logo_01.png">
+        </a>
+        <ul class="sns">
+            <li><div class="line"></div></li>
+            <li><a><i class="fab fa-facebook-f"></i></a></li>
+            <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <ul class="nav">
+            <li>HOME</li>
+            <li>ANIMALS</li>
+            <li>SPECIAL EXHIBITION</li>
+            <li>EXPLORE S.E.A.</li>
+            <li>ATLANTIS</li>
+            <li>VISIT US</li>
+        </ul>
+        <div class="nav2">
+            <a href="javascript:;" class="btns ticket bubble">TICKET</a>
+            <select name="languege_selector" class="lang">
+                <option value="kr">KR</option>
+                <option value="en" selected>EN</option>
+                <option value="cn">CN</option>
+                <option value="jp">JP</option>
+            </select>
+            <i class="far fa-chevron-down"></i>
+        </div>
+    </div>
+	<div id="fullpage">
+        <iframe id="video_con_01" src="https://www.youtube.com/embed/c0MIFe-iEcs?start=7653&autoplay=1&rel=0&mute=1&showinfo=0&controls=0&loop=1&disablekb=1" frameborder="0" ></iframe>
+		<div id="visual" class="fullsection full1 hide" pagenum="1"><!--페이지넘버 주석임-->
+            <img src="img/guide_ratio_16_9.png" class="guide_ratio">
+            <div class="copy"><b>&copy; S.E.A. Aquarium</b> All Rights Reserved.</div>
+            <div class="full_con">
+                <div class="title_con center">
+                    <h3>Explore the wonders of the ocean's diverse</h3>
+                    <h2>S.E.A. AQUARIUM&#8482;</h2>
+                    <h4>S.E.A. Aquarium is one of the world’s largest aquariums, home to more than 100,000<br>marine animals representing 1,000 species across more than 40 diverse habitats.<br><br>The vast array of aquatic life is complemented by interactive programmes,<br> up-close animal encounters and immersive learning journeys to<br> inspire visitors to protect the world’s oceans.</h4>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+		</div>
+		<div id="ANIMALS" class="fullsection full2 hide" pagenum="2">
+            <div class="full_con">
+                <div class="title_con center">
+                    <h3>Ocean Spotlights</h3>
+                    <h2>ANIMALS</h2>
+                    <h4>Our 6 superstars are waiting for you.<br>Meet the superstars in advance here.</h4>
+                </div>
+                <div class="slider">
+                    <ul class="slider_inner">
+                        <li class="modal1" style="background: url(img/animal_back_01.png)" onmouseup="openModal('modal1');">
+                            <img class="animals animal1 animal_01_01" src="img/animal_01_01.png">
+                            <img class="animals animal2 animal_01_02" src="img/animal_01_02.png">
+                            <h5>Dolphin</h5>
+                        </li><!--
+                     --><li class="modal2" style="background: url(img/animal_back_01.png)" onmouseup="openModal('modal2');">
+                            <img src="img/animal_02_01.png" class="animals animal_02_01">
+                            <img src="img/animal_02_02.png" class="animals animal_02_02">
+                            <h5>Great White Shark</h5>
+                        </li><!--
+                     --><li class="modal3" style="background: url(img/animal_back_01.png)" onmouseup="openModal('modal3');">
+                            <img src="img/animal_03_01.png" class="animals animal_03_01">
+                            <img src="img/animal_03_02.png" class="animals animal_03_02">
+                            <h5>Whale-Shark</h5>
+                        </li><!--
+                     --><li class="modal4" style="background: url(img/animal_back_01.png)" onmouseup="openModal('modal4');">
+                            <img src="img/animal_04_01.png" class="animals animal_04_01">
+                            <img src="img/animal_04_02.png" class="animals animal_04_02">
+                            <h5>SEA TURTLE</h5>
+                        </li><!--
+                     --><li class="modal5" style="background: url(img/animal_back_01.png)" onmouseup="openModal('modal5');">
+                            <img src="img/animal_05_01.png" class="animals animal_05_01">
+                            <img src="img/animal_05_02.png" class="animals animal_05_02">
+                            <h5>SEA LION</h5>
+                        </li><!--
+                     --><li class="modal6" style="background: url(img/animal_back_01.png)" onmouseup="openModal('modal6');">
+                            <img src="img/animal_06_01.png" class="animals animal_06_01">
+                            <img src="img/animal_06_02.png" class="animals animal_06_02">
+                            <h5>KING PENGUIN</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="cover"></div>
+                <div class="modal_content">              
+                    <a href="#none" class="close">&times;</a>
+                    <h1></h1>
+                    <ul class="text">
+                        <li><h6 class="menu"></h6></li>
+                        <li><h6 class="info"></h6></li>
+                        <li><h6 class="detail"><br></h6></li>
+                    </ul>
+                    <img class="animals animals2">
+                    <img class="scale">
+                </div>
+            </div>
+		</div>
+		<div id="SPECIAL" class="fullsection full3 hide" pagenum="3">
+            <div class="full_sub_con" data-index="1">
+                <div class="full_sub full_sub01" style="background: linear-gradient(90deg, #222 0%, #2a2696 50%, #222 100%);">
+                    <div class="full_con">
+                        <div id="fish" class="fish_con">
+                            <div class="p_fish_01"></div>
+                            <div class="p_fish_02"></div>
+                            <div class="p_fish_03"></div>
+                            <div class="p_fish_04"></div>
+                        </div>
+                        <div class="title_con left">
+                            <h3>ART AQUARIUM</h3>
+                            <h2>SPECIAL EXHIBITION</h2>
+                            <h4>A glamorous goldfish that continues to dance gracefully<br>and the beauty of the space where you can  feel infinity Feel<br>the changing appearance in the museum where life dwells<br>with all five senses There is an illusion here that makes you<br>forget about the hustle and bustle of today.</h4>
+                        </div>
+                        <div class="line01"></div>
+                    </div>
+                </div>
+                <div class="full_sub full_sub02 hide" style="background: linear-gradient(90deg, #222 0%, #2a2696 50%, #222 100%);">
+                    <div class="full_con">
+                        <div class="text">
+                            <h3>Facility Guide</h3>
+                            <h5>Highlight</h5>
+                        </div>
+                        <ul class="two_con">
+                            <li><img class="faciimg_01" src="img/special_facility_01.jpg"></li>
+                            <li>
+                                <div class="intext text01">
+                                    <h5>Chikurinnananken (Bamboo forst)</h5>
+                                    <h4>A solemn space centered on tranquility is composed<br>of a series of lanterns and bamboo forests to provide<br>a pure place for the sublimation of knowledge.<br>(Teitorium・Goldfish Forest Exhibition Area)</h4>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="line02"></div>
+                        <ul class="two_con">
+                            <li>
+                                <div class="intext text02">
+                                    <h5>Hyakka Ryoran</h5>
+                                    <h4>Changing the flower to elegance. The colorful<br>goldfish spreads out in infinity. The intersection of<br>lights and colors has been redesigned into Origami, a<br>traditional Japanese culture. (A show of Kingyo<br>[NewVersion]・Origamirium Exhibition Area)</h4>
+                                </div>
+                            </li>
+                            <li><img class="faciimg_02" src="img/special_facility_02.jpg"></li>
+                        </ul>
+                        <div class="line03"></div>
+                        <div class="gold_01">
+                            <img class="fish fish_01" src="img/special_ani_01.png">
+                            <img class="fish fish_02" src="img/special_ani_02.png">
+                        </div>
+                        <div class="gold_02">
+                            <img class="fish fish_03" src="img/special_ani_03.png">
+                            <img class="fish fish_04" src="img/special_ani_04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="full_sub full_sub03" style="background: linear-gradient(90deg, #222 0%,#2a2696 60%, #2a2696 90%, #222 100%);">
+                    <div class="full_con">
+                        <ul class="three_con">
+                            <li class="art_01">
+                                <ul class="two_con">
+                                    <li>
+                                        <div class="text">
+                                            <h3>Artworks</h3>
+                                            <h5>Part of the collections will be displayed<br>in rotation among the museums regularly.</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <ul class="two_con art">
+                                            <li style="background: url(img/art_01.jpg)" onmouseup="openModal2('modal01');"></li>
+                                            <li style="background: url(img/art_02.jpg)" onmouseup="openModal2('modal02');"></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="art_02">
+                                <ul class="two_con">
+                                    <li>
+                                        <ul class="two_con art">
+                                            <li style="background: url(img/art_03.jpg)" onmouseup="openModal2('modal03');"></li>
+                                            <li style="background: url(img/art_04.jpg)" onmouseup="openModal2('modal04');"></li>
+                                        </ul>
+                                    </li>
+                                    <li class="art" style="background: url(img/art_05.jpg)" onmouseup="openModal2('modal05');"></li>    
+                                </ul>
+                            </li>
+                            <li class="art_03 art" style="background: url(img/art_06.jpg)" onmouseup="openModal2('modal06');"></li>
+                        </ul>
+                        <div class="line04"></div>
+                        <div class="gold_03">
+                            <img class="fish fish_05" src="img/special_ani_05.png">
+                            <img class="fish fish_06" src="img/special_ani_06.png">
+                        </div>
+                        <div class="gold_04">
+                            <img class="fish fish_07" src="img/special_ani_01.png">
+                            <img class="fish fish_08" src="img/special_ani_02.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="cover"></div>
+                    <div class="modal_content">
+                        <img src="img/art_01_1.jpg">
+                        <a href="#none" class="close">&times;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn btn_a btn_left"><i class="fal fa-chevron-left"></i></div>
+            <div class="btn btn_a btn_right"><i class="fal fa-chevron-right"></i></div>
+        </div>
+		<div id="MAPS" class="fullsection full4 hide" style="background: url(img/bg_01.jpg) 50% no-repeat; background-size: cover;" pagenum="4">
+            <div class="cover"></div>
+            <img src="img/map_01.png" class="map">
+            <ul class="area">
+                <li class="btn_area area_01"><p>1</p><img src="img/btn_01.png" class="btn_01 btn_plus"><i class="fas fa-arrow-alt-up"></i></li>
+                <li class="btn_area area_02"><p>2</p><img src="img/btn_02.png" class="btn_02 btn_plus"></li>
+                <li class="btn_area area_03"><p>3</p><img src="img/btn_03.png" class="btn_03 btn_plus"></li>
+                <li class="btn_area area_04"><p>4</p><img src="img/btn_04.png" class="btn_04 btn_plus"></li>
+                <li class="btn_area area_05"><p>5</p><img src="img/btn_05.png" class="btn_05 btn_plus"></li>
+                <li class="btn_area area_06"><p>6</p><img src="img/btn_06.png" class="btn_06 btn_plus"></li>
+            </ul>
+            <div class="full_con">
+                <div class="flip">
+                    <div class="content">
+                        <div class="front">
+                            <div class="reflect"></div>
+                            <div class="title_con center blue">
+                                <h3>MAP GUIDE</h3>
+                                <h2>EXPLORE S.E.A.</h2>
+                                <h4>EXPLORE S.E.A. has a<br>total of 6 exploration areas.<br>Don't miss any of the zones and<br>have fun exploring every zone.<br>An amazing adventure awaits you.<br></h4>
+                                <h5>Click on the map</h5>
+                            </div>
+                            <div class="inform inform_00"><p>1</p></div>
+                        </div>
+                        <ul class="back">
+                            <li class="back_bg back_list"></li>
+                            <li class="back_01 back_list">
+                                <div class="case"><h5>1 Tropical Zone</h5></div>
+                                <img src="img/maps_detail_01.png">
+                                <div class="text_bg"><h6>Tropical Zone is a relaxing end to a journey through all the regions of the world at S.E.A. Aquarium. These tropical coral reef exhibits are appropriately arranged like a gallery of living art, where you’ll encounter curious garden eels popping up out of the sand.<br><br>In Tropical Diver, living corals and thousands of colorful reef fish are presented in a faithful recreation of a tropical Pacific coral reef, complete with an overhead crashing wave.</h6></div>
+                                <a href="#none" class="close2">&times;</a>
+                            </li>
+                            <li class="back_02 back_list">
+                                <div class="case"><h5>2<br>Ocean Voyager</h5></div>
+                                <img src="img/maps_detail_02.png">
+                                <div class="text_bg"><h6>Our Ocean Voyager gallery, built by The Home Depot is home to whale sharks, manta rays and thousands of other fascinating fish.<br><br>As one of the largest single aquatic exhibits in the world, Ocean Voyager features an acrylic tunnel for guests to view thousands of marine creatures on all sides, as well as a giant acrylic viewing window to explore our oceans like never before.</h6></div>
+                                <a href="#none" class="close2">&times;</a>
+                            </li>
+                            <li class="back_03 back_list">
+                                <div class="case"><h5>3 Dolphin Coast</h5></div>
+                                <img src="img/maps_detail_03.png">
+                                <div class="text_bg"><h6>Cruise on over to S.E.A. Aquarium’s captivating coast, Dolphin Coast! This gallery features the Aquarium’s own pod of common bottlenose dolphins. Guests can admire the dolphins in both the Dolphin Coast lobby, as well as in the dolphin theater.<br><br>The featured dolphin presentation is full of fun marine facts, a live training demonstration and educates guests about the Aquarium’s efforts in preserving this extraordinary species.</h6></div>
+                                <a href="#none" class="close2">&times;</a>
+                            </li>
+                            <li class="back_04 back_list">
+                                <div class="case"><h5>4<br>Beaver Dam</h5></div>
+                                <img src="img/maps_detail_04.png">
+                                <div class="text_bg"><h6>This is a village where beavers built a dam. and Rivers are a source of life for animals, people and cultures throughout the world. In the Southern Company River Scout gallery, you’ll explore the wide diversity of animals found in the rivers of Africa, South America, Asia and right here in Georgia.<br><br>This gallery is a themed environment full of waterfalls, logjams and a simulated meandering North American river that flows over your head.</h6></div>
+                                <a href="#none" class="close2">&times;</a>
+                            </li>
+                            <li class="back_05 back_list">
+                                <div class="case"><h5>5<br>Sea Lion Theater</h5></div>
+                                <img src="img/maps_detail_05.png">
+                                <div class="text_bg"><h6>Our beloved California sea lions have returned! Truist Pier 225’s live presentation, Under the Boardwalk, features S.E.A. Aquarium’s incredible California sea lions.<br><br>These highly social pinnipeds and their dedicated trainers will show you how they work together — and why this is such an important part of animal care at S.E.A. Aquarium — in a live training session.</h6></div>
+                                <a href="#none" class="close2">&times;</a>
+                            </li>
+                            <li class="back_06 back_list">
+                                <div class="case"><h5>6<br>Shark !</h5></div>
+                                <img src="img/maps_detail_06.png">
+                                <div class="text_bg"><h6>S.E.A. Aquarium’s newest gallery, Sharks! Predators of the Deep®, is one of the largest and most dynamic shark exhibits in North America.<br><br>Home to some of the most recognizable apex predators in the ocean, this exciting new gallery experience brings you face to face with the most enigmatic and misunderstood creatures in the sea. S.E.A. focus is to provide a fresh perspective on the vital role sharks play in the ocean.</h6></div>
+                                <a href="#none" class="close2">&times;</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div id="HOTEL" class="fullsection full5 hide" style="background: url(img/hotel_bg_02.jpg) 50% no-repeat; background-size: cover;" pagenum="5">
+            <div class="full_sub_con" data-index="1">
+                <div class="full_sub" style="background: url(img/hotel_bg_01.jpg) 50% no-repeat; background-size: cover;">
+                    <div class="full_con full_con_01">
+                        <div class="title_con right">
+                            <h3>THE UNDERWATER HOTEL</h3>
+                            <h2>ATLANTIS</h2>
+                            <h4>Our Signature Suites are the gems of Atlantis, The Palm.<br>These rare and iconic gems will transport you to new worlds<br>of opulence and grandiosity for a once-in-a-lifetime holiday.<br>Whether it’s a special occasion to celebrate or simply a magical getaway<br>to indulge in, you will wake up feeling extraordinary in a world of luxury.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="full_sub hide">
+                    <div class="full_con full_con_02">
+                        <div class="title_con center">
+                            <h3>Ocean Spotlights</h3>
+                            <h2>UNDERWATER SUITE</h2>
+                            <h4>Our Underwater Suite is a haven for peace and tranquility, which features immense<br>floor-to-ceiling windows into our 65,000 marine animal aquarium in georgia.<br>Float the evening away in your marble bath tub with views of the Ambassador Lagoon,<br>and be mesmerised as sharks, rays and fish glide right past your bed.</h4>
+                        </div>
+                        <ul class="two_con">
+                            <li class="hotel_01" style="background: url(img/hotel_in_01.jpg) 50% no-repeat; background-size: cover;">
+                               <div class="hotel_text">
+                                    <h5>Bathroom</h5>
+                                    <h6>Gaze at 65,000 marine animals<br>from the comfort of your bath tub.</h6>
+                                </div>
+                            </li>
+                            <li class="hotel_02" style="background: url(img/hotel_in_02.jpg) 50% no-repeat; background-size: cover;">
+                                <div class="hotel_text">
+                                    <h5>Bedroom</h5>
+                                    <h6>Drift away in the opulence of your<br>king size bed, with dreamy aquarium views.</h6>
+                                </div>
+                            </li>
+                        </ul>
+                        <img src="img/hotel_in_03.png" class="hotel_fish_01">
+                        <img src="img/hotel_in_09.png" class="hotel_fish_02">
+                    </div>
+                </div>
+                <div class="full_sub hide">
+                    <div class="full_con full_con_03">
+                        <div class="title_con center">
+                            <h3>Luxury Extras Included</h3>
+                            <h2>SERVICE</h2>
+                            <h4>Indulge in daily continental breakfast, afternoon tea and evening drinks at<br>the Imperial Club Lounge, plus private beach access, and much more.</h4>
+                        </div>
+                        <ul class="three_con">
+                            <li class="hotel_03" style="background: url(img/hotel_in_04.jpg) 50% no-repeat; background-size: cover;"><h5>Private Butler</h5></li>
+                            <li class="hotel_04" style="background: url(img/hotel_in_05.jpg) 50% no-repeat; background-size: cover;"><h5>Private Spa</h5></li>
+                            <li class="hotel_05" style="background: url(img/hotel_in_06.jpg) 50% no-repeat; background-size: cover;"><h5>Private Chauffeur</h5></li>
+                        </ul>
+                        <a href="javascript:;" class="btns shine">Reserve Now</a>
+                        <img src="img/hotel_in_07.png" class="hotel_fish_03">
+                        <img src="img/hotel_in_08.png" class="hotel_fish_04">
+                    </div>
+                </div>
+            </div>
+            <div class="btn btn_a btn_left"><i class="fal fa-chevron-left"></i></div>
+            <div class="btn btn_a btn_right"><i class="fal fa-chevron-right"></i></div>
+        </div>
+		<div id="INFO" class="fullsection full6 hide" style="background: url(img/bg_01.jpg) 50% no-repeat; background-size: cover;" pagenum="6">
+            <div class="full_con">
+                <ul class="three_con">
+                    <li class="list_01">
+                        <div class="card card_02">
+                            <h3>Opening Hour</h3>
+                            <div class="text_box text_01">
+                                <h5>- Weekdays -</h5>
+                                <h6>10:00 a.m. to 8:00 p.m.</h6>
+                                <h5>- Weekends and Holidays -</h5>
+                                <h6>9:30 a.m. to 8:00 p.m.</h6>
+                            </div>
+                            <a href="javascript:;" class="btns shine">More View</a>
+                        </div>
+                    </li>
+                    <li class="list_02">
+                        <div class="card card_03">
+                            <h3>Ticket</h3>
+                            <div class="text_box text_02">
+                                <h5>- Adults -</h5>
+                                <h6>50$</h6>
+                                <h5>- Elementary&amp;High school - </h5>
+                                <h6>30$</h6>
+                                <h5>- Children under 12 -</h5>
+                                <h6>Free</h6>
+                            </div>
+                            <a href="javascript:;" class="btns shine">More View</a>
+                        </div>
+                    </li>
+                    <li class="list_03">
+                        <div class="card card_04">
+                            <h3>Access</h3>
+                            <div class="text_box text_03">
+                                <h5>- Adress -</h5>
+                                <h6>357 Luckie St NW,<br>Atlanta, GA 30313, USA</h6>
+                                <h5>- Phone -</h5>
+                                <h6>+1 404-581-4000</h6>
+                            </div>
+                            <a href="javascript:;" class="btns shine">More View</a>
+                        </div>
+                    </li>
+                </ul>
+                <img src="img/ticket_bg_01.png" class="dolphin_01">
+                <img src="img/ticket_bg_02.png" class="dolphin_02">
+            </div>
+        </div>
+        <div id="pagination" class="pagination hide">
+            <b>1</b>/<span></span>
+        </div>
+		<div id="quick" class="quick hide">
+            <ul class="vertical"></ul>
+        </div>
+	</div>
+	<div class="guide_line"><div></div><span></span></div>
+</body>
+</html>
